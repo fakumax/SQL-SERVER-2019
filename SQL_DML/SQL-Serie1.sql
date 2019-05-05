@@ -1,3 +1,5 @@
+use editorial
+
 --1.1. Listar los cargos
 select *
 from cargos
