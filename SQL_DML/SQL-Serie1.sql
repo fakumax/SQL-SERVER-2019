@@ -3,7 +3,7 @@ use editorial
 select *
 from cargos
 
---1.2. Listar todas las columnas de empleados y la descripciÛn del cargo que tienen.
+--1.2. Listar todas las columnas de empleados y la descripci√≥n del cargo que tienen.
 select empleados.*, cargos.cargo_descripcion
 from empleados,cargos
 where empleados.cargo_id= cargos.cargo_id
@@ -12,17 +12,17 @@ where empleados.cargo_id= cargos.cargo_id
 --bajo por espacio
 
 select empleado_id as 'Empleado Id', inicial_segundo_nombre as 'Inicial Segundo Nombre',cargo_id as 'Cargo Id',
-nivel_cargo as 'Nivel Cargo', editorial_id as 'Editorial Id', fecha_contratacion as 'Fecha ContrataciÛn'
+nivel_cargo as 'Nivel Cargo', editorial_id as 'Editorial Id', fecha_contratacion as 'Fecha Contrataci√≥n'
 from empleados 
 
---1.4. Calcular A = (pi *radio)**2 donde r = 10 y la funciÛn Pi() para Pi
+--1.4. Calcular A = (pi *radio)**2 donde r = 10 y la funci√≥n Pi() para Pi
 select a= pi()* power(10,2)
 
-/*1.5. Mostrar por cada tÌtulo su nombre y cuanto corresponde de regalÌas por cada 1000
-tÌtulos vendidos. Esta columna se debe mostrar como ìRegalÌas x cada 1000
-unidadesî. Titulo.regalÌas es un porcentaje.*/
+/*1.5. Mostrar por cada t√≠tulo su nombre y cuanto corresponde de regal√≠as por cada 1000
+t√≠tulos vendidos. Esta columna se debe mostrar como ‚ÄúRegal√≠as x cada 1000
+unidades‚Äù. Titulo.regal√≠as es un porcentaje.*/
 
-select titulos.titulo, 'RegalÌas x cada 1000 unidades'= titulos.precio*0.01* titulos.regalias*1000
+select titulos.titulo, 'Regal√≠as x cada 1000 unidades'= titulos.precio*0.01* titulos.regalias*1000
 from titulos
 
 
@@ -31,11 +31,11 @@ from titulos
 select distinct autores.autor_nombre
 from autores
 
---1.7. Listar los paÌses de las editoriales sin repetirlos.
+--1.7. Listar los pa√≠ses de las editoriales sin repetirlos.
 select distinct editoriales.pais
 from editoriales
 
---1.8. Listar los nombres de almacÈn que hayan tenido ventas sin repetirlos.
+--1.8. Listar los nombres de almac√©n que hayan tenido ventas sin repetirlos.
 
 select distinct almacenes.almacen_nombre
 from almacenes, ventas
